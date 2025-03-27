@@ -1,7 +1,7 @@
 import React from "react";
 /* The following line can be included in your src/index.js or App.js file */
 
-import { Button } from "react-bootstrap";
+import { Accordion, Button } from "react-bootstrap";
 
 const App = () => {
   const accordionData = [
@@ -31,6 +31,7 @@ const App = () => {
       {/* ------Accodion--------- */}
       <div className="container">
         <h1>Accordion Example</h1>
+        <Accordion items={accordionData} />
       </div>
     </>
   );
