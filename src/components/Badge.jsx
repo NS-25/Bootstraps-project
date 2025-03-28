@@ -38,16 +38,20 @@ import PropTypes from "prop-types";
  * @param {string} props.label - Text displayed inside the badge
  * @returns {JSX.Element} A styled badge element
  */
-const Badge = ({ variant = "primary", label, type = "default" }) => {
+const Badge = ({
+  variant = "primary",
+  label,
+  type = "default",
+  size = "fs-1",
+}) => {
   // Build class name dynamically based on variant and type
-
-  console.log("Badge rendered with:", { variant, label, type });
+  // console.log("Badge rendered with:", { variant, label, type });
 
   return (
     <span
       className={`badge text-bg-${variant} ${
         type === "pill" ? "rounded-pill" : ""
-      }`}
+      }   ${size}`}
     >
       {label}
     </span>
