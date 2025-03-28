@@ -3,6 +3,7 @@ import React from "react";
 
 // import { Accordion, Button } from "react-bootstrap";
 import Badge from "./components/Badge";
+import Alert from "./components/Alert";
 
 const App = () => {
   // const accordionData = [
@@ -25,6 +26,9 @@ const App = () => {
       <Badge variant="primary" label="Oops!" type="candy" />
       <Badge variant="danger" label="used card 2" />
       <Badge variant="info" label="used card 3" type="pill" />
+      <div>
+        <Alert />
+      </div>
     </>
   );
 };
