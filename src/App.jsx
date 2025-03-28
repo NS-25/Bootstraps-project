@@ -23,8 +23,8 @@ const App = () => {
 
   return (
     <>
-      <Badge variant="primary" label="used card 1" type="default" size="fs-4" />
-      <Badge variant="danger" label="used card 2" type="default" />
+      <Badge variant="primary" label="used card 1" type="default" size="2" />
+      <Badge variant="danger" label="used card 2" type="default" size="1" />
       <Badge variant="info" label="used card 3" type="pill" />
       <div>
         <Alert />

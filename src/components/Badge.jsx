@@ -42,7 +42,7 @@ const Badge = ({
   variant = "primary",
   label,
   type = "default",
-  size = "fs-1",
+  size = "0",
 }) => {
   // Build class name dynamically based on variant and type
   // console.log("Badge rendered with:", { variant, label, type });
@@ -51,7 +51,7 @@ const Badge = ({
     <span
       className={`badge text-bg-${variant} ${
         type === "pill" ? "rounded-pill" : ""
-      }   ${size}`}
+      }   fs-${size}`}
     >
       {label}
     </span>
