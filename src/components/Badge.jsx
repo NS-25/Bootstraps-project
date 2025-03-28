@@ -40,6 +40,9 @@ import PropTypes from "prop-types";
  */
 const Badge = ({ variant = "primary", label, type = "default" }) => {
   // Build class name dynamically based on variant and type
+
+  console.log("Badge rendered with:", { variant, label, type });
+
   return (
     <span
       className={`badge text-bg-${variant} ${
