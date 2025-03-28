@@ -2,6 +2,7 @@ import React from "react";
 /* The following line can be included in your src/index.js or App.js file */
 
 import { Accordion, Button } from "react-bootstrap";
+import Badge from "./components/Badge";
 
 const App = () => {
   const accordionData = [
@@ -20,19 +21,9 @@ const App = () => {
   ];
   return (
     <>
-      <div>
-        <Button as="a" variant="primary">
-          Button as link
-        </Button>
-        <Button as="a" variant="success">
-          Button as link
-        </Button>
-      </div>
-      {/* ------Accodion--------- */}
-      <div className="container">
-        <h1>Accordion Example</h1>
-        <Accordion items={accordionData} />
-      </div>
+      <Badge variant="primary" label="used card 1" type="Oops" />
+      <Badge variant="danger" label="used card 2" />
+      <Badge variant="info" label="used card 3" type="pill" />
     </>
   );
 };

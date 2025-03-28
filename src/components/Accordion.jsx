@@ -1,17 +1,19 @@
 import React from "react";
-// import { useState } from "react";
 
 const Accordion = ({ items }) => {
-  // const [openItem, setOpenItem] = useState(false);
-
   return (
     <div className="accordion" id="accordionExample">
-      {items.map((item, index) => {
+      {items.map((item, index) => (
         <div className="accordion-item" key={index}>
-          <h2 className="accordion-header">{item.title}</h2>
+          <h2 className="accordion-header">
+            {/* <button className="accordion-button" type="button">
+              {item.title}
+            </button> */}
+            {item.title}
+          </h2>
           <div className="accordion-body">{item.content}</div>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 };
