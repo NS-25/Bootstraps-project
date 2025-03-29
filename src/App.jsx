@@ -27,7 +27,7 @@ const App = () => {
       <Badge variant="danger" label="used card 2" type="default" size="1" />
       <Badge variant="info" label="used card 3" type="pill" />
       <div>
-        <Alert />
+        <Alert variant="success" />
       </div>
     </>
   );
