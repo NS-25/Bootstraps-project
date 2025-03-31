@@ -28,6 +28,7 @@ const App = () => {
       <Badge variant="info" label="used card 3" type="pill" />
       <div>
         <Alert variant="success" head="heading" close="close" />
+        <Alert variant="warning" close="close" />
       </div>
     </>
   );
