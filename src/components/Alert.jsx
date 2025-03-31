@@ -10,7 +10,12 @@ const Alert = ({ variant, head, close }) => {
       <div className={` alert alert-${variant} `}>
         <strong>Holy guacamole!</strong> You should check in on some of those
         fields below.
-        <button type="button" className={`btn-${close}`}></button>
+        <button
+          type="button"
+          className={`btn-${close}`}
+          data-bs-dismiss="alert"
+          arial-label="Close"
+        ></button>
       </div>
     </>
   );
