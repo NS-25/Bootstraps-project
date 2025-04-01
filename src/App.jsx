@@ -4,6 +4,7 @@ import React from "react";
 // import { Accordion, Button } from "react-bootstrap";
 import Badge from "./components/Badge";
 import Alert from "./components/Alert";
+import Breadcrumb from "./components/Breadcrumb";
 
 const App = () => {
   // const accordionData = [
@@ -29,6 +30,9 @@ const App = () => {
       <div>
         <Alert variant="success" head="heading" close="close" />
         <Alert variant="warning" close="close" />
+      </div>
+      <div className="mt-1">
+        <Breadcrumb type="item" />
       </div>
     </>
   );
