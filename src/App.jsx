@@ -31,7 +31,7 @@ const App = () => {
         <Alert variant="success" head="heading" close="close" />
         <Alert variant="warning" close="close" />
       </div>
-      <div className="mt-1">
+      <div className="mt-4">
         <Breadcrumb type="item" />
       </div>
     </>
