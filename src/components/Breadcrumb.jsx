@@ -8,8 +8,11 @@ const Breadcrumb = ({ type }) => {
           <li className={`breadcrumb-${type}`}>
             <a href="#">Home</a>
           </li>
+          <li className={`breadcrumb-${type}`}>
+            <a href="#">Library</a>
+          </li>
           <li className={`breadcrumb-${type}`} aria-current="page">
-            Library
+            Data
           </li>
         </ol>
       </nav>
