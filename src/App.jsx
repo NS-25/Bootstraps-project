@@ -6,6 +6,24 @@ import Badge from "./components/Badge";
 import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
 
+const links = [
+  {
+    id: 1,
+    label: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    label: "Library",
+    path: "/library",
+  },
+  {
+    id: 3,
+    label: "Data",
+    path: "/library/data",
+  },
+];
+
 const App = () => {
   // const accordionData = [
   //   {
@@ -24,7 +42,8 @@ const App = () => {
 
   return (
     <>
-      <Badge variant="primary" label="used card 1" type="default" size="2" />
+      <Breadcrumb items={links} />
+      {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
       <Badge variant="danger" label="used card 2" type="default" size="1" />
       <Badge variant="info" label="used card 3" type="pill" />
       <div>
@@ -33,7 +52,7 @@ const App = () => {
       </div>
       <div className="mt-4">
         <Breadcrumb type="item" />
-      </div>
+      </div> */}
     </>
   );
 };
