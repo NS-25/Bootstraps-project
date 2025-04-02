@@ -23,6 +23,22 @@ const links = [
     path: "/library/data",
   },
 ];
+// Card components
+const CardList = [
+  {
+    title: "Card A",
+    imageUrl: "https://picsum.photos/seed/picsum/200/300",
+    text: "This is Card A",
+    buttonText: "Click A",
+  },
+  {
+    title: "Card B",
+    imageUrl: "https://picsum.photos/id/237/200/300",
+    text: ""
+  },
+];
+
+
 
 const App = () => {
   // const accordionData = [
