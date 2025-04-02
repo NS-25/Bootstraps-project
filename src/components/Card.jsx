@@ -3,8 +3,8 @@ const Card = () => {
   return (
     <div>
       <img src={imageUrl} className="card-img-top" alt={title} />
-      <div>
-        <h5>{title}</h5>
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
         <p>{text}</p>
         <button>{buttonText}</button>
       </div>
