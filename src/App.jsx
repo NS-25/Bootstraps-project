@@ -80,7 +80,14 @@ const App = () => {
 
       <div>
         {CardList.map((card, index) => (
-          <Card />
+          <Card
+            key={index}
+            title={card.title}
+            imageUrl={card.imageUrl}
+            text={card.text}
+            buttonText={card.buttonText}
+            onButtonClick={() => handleCardClick(card.title)}
+          />
         ))}
       </div>
     </>
