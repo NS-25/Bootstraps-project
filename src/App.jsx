@@ -46,8 +46,8 @@ const CardList = [
   },
 ];
 
-const handleCardClick = (buttonText) => {
-  alert(`Clicked: ${buttonText}`);
+const handleCardClick = (title) => {
+  alert(`Clicked: ${title}`);
 };
 
 const App = () => {
@@ -88,7 +88,7 @@ const App = () => {
             imageUrl={card.imageUrl}
             text={card.text}
             buttonText={card.buttonText}
-            onButtonClick={() => handleCardClick(card.buttonText)}
+            onButtonClick={() => handleCardClick(card.title)}
           />
         ))}
       </div>
