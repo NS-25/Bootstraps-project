@@ -78,7 +78,7 @@ const App = () => {
         <Breadcrumb type="item" />
       </div> */}
 
-      <div>
+      <div className="container mt-5 d-flex flex-wrap">
         {CardList.map((card, index) => (
           <Card
             key={index}
