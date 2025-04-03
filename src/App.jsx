@@ -34,11 +34,14 @@ const CardList = [
   {
     title: "Card B",
     imageUrl: "https://picsum.photos/id/237/200/300",
-    text: ""
+    text: "Click B",
+  },
+  {
+    title: "Card C",
+    imageUrl: "https://picsum.photos/200",
+    text: "Click C",
   },
 ];
-
-
 
 const App = () => {
   // const accordionData = [
