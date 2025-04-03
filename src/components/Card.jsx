@@ -39,4 +39,14 @@ const Card = ({ title, imageUrl, text, buttonText, onButtonClick }) => {
     </div>
   );
 };
+
+
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+  onButtonClick: PropTypes.func.isRequired,
+};
 export default Card;
