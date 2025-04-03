@@ -7,23 +7,23 @@ import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
 import Card from "./components/Card";
 
-const links = [
-  {
-    id: 1,
-    label: "Home",
-    path: "/",
-  },
-  {
-    id: 2,
-    label: "Library",
-    path: "/library",
-  },
-  {
-    id: 3,
-    label: "Data",
-    path: "/library/data",
-  },
-];
+// const links = [
+//   {
+//     id: 1,
+//     label: "Home",
+//     path: "/",
+//   },
+//   {
+//     id: 2,
+//     label: "Library",
+//     path: "/library",
+//   },
+//   {
+//     id: 3,
+//     label: "Data",
+//     path: "/library/data",
+//   },
+// ];
 // Card components
 const CardList = [
   {
@@ -46,8 +46,8 @@ const CardList = [
   },
 ];
 
-const handleCardClick = (title) => {
-  alert(`Clicked: ${title}`);
+const handleCardClick = (buttonText) => {
+  alert(`Clicked: ${buttonText}`);
 };
 
 const App = () => {
@@ -88,7 +88,7 @@ const App = () => {
             imageUrl={card.imageUrl}
             text={card.text}
             buttonText={card.buttonText}
-            onButtonClick={() => handleCardClick(card.title)}
+            onButtonClick={() => handleCardClick(card.buttonText)}
           />
         ))}
       </div>
