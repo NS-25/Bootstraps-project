@@ -35,12 +35,14 @@ const CardList = [
   {
     title: "Card B",
     imageUrl: "https://picsum.photos/id/237/200/300",
-    text: "Click B",
+    text: "This is Card B",
+    buttonText: "Click B",
   },
   {
     title: "Card C",
     imageUrl: "https://picsum.photos/200",
-    text: "Click C",
+    text: "This is Card C",
+    buttonText: "Click C",
   },
 ];
 
