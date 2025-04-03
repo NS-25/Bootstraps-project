@@ -5,6 +5,7 @@ import React from "react";
 import Badge from "./components/Badge";
 import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
+import Card from "./components/Card";
 
 const links = [
   {
@@ -43,6 +44,10 @@ const CardList = [
   },
 ];
 
+const handleCardClick = (title) => {
+  alert(`Clicked: ${title}`);
+};
+
 const App = () => {
   // const accordionData = [
   //   {
@@ -61,7 +66,7 @@ const App = () => {
 
   return (
     <>
-      <Breadcrumb items={links} />
+      {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
       <Badge variant="danger" label="used card 2" type="default" size="1" />
       <Badge variant="info" label="used card 3" type="pill" />
@@ -72,6 +77,12 @@ const App = () => {
       <div className="mt-4">
         <Breadcrumb type="item" />
       </div> */}
+
+      <div>
+        {CardList.map((card, index) => (
+          <Card />
+        ))}
+      </div>
     </>
   );
 };
