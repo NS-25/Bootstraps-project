@@ -27,7 +27,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ title, imageUrl, text, buttonText, onButtonClick }) => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card m-3 w-25">
       <img src={imageUrl} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
@@ -39,8 +39,6 @@ const Card = ({ title, imageUrl, text, buttonText, onButtonClick }) => {
     </div>
   );
 };
-
-
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
