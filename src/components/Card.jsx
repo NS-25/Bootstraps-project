@@ -36,7 +36,16 @@ const Card = ({
   showActions = true,
 }) => {
   return (
-    <div className="card m-3 " style={{ width: "18rem" }}>
+    <div
+      className="card m-3 shadow-sm"
+      style={{ width: "18rem", transition: "transform 0.3s" }}
+      onMouseEnter={() => {
+        e.currentTarget.style.transform = "scale(1.03)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "scale(1)";
+      }}
+    >
       <img src={imageUrl} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
