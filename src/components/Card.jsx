@@ -25,9 +25,18 @@ import PropTypes from "prop-types";
  * @returns {JSX.Element} A styled card component
  */
 
-const Card = ({ title, imageUrl, text, buttonText, onButtonClick }) => {
+const Card = ({
+  title,
+  imageUrl,
+  text,
+  buttonText,
+  onButtonClick,
+  onEdit,
+  onDelete,
+  showActions = true,
+}) => {
   return (
-    <div className="card m-3 w-30">
+    <div className="card m-3 " style={{ width: "18rem" }}>
       <img src={imageUrl} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
@@ -46,5 +55,8 @@ Card.propTypes = {
   text: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   onButtonClick: PropTypes.func.isRequired,
+  onEdit: PropTypes.func,
+  onDelete: PropTypes.func,
+  showActions: PropTypes.bool,
 };
 export default Card;

@@ -80,9 +80,10 @@ const App = () => {
         <Breadcrumb type="item" />
       </div> */}
 
-      <div className="col-md-4 col-sm-6">
+      <div className="container mt-5 d-flex flex-wrap">
         {CardList.map((card, index) => (
           <Card
+            // className="col-md-4 col-sm-6"
             key={index}
             title={card.title}
             imageUrl={card.imageUrl}
