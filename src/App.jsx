@@ -50,6 +50,13 @@ const handleCardClick = (title) => {
   alert(`Clicked: ${title}`);
 };
 
+const handleEdit = () => {
+  alert("Edit Clicked");
+};
+
+const handleDelete = () => {
+  alert("Delete Clicked");
+};
 const App = () => {
   // const accordionData = [
   //   {
@@ -90,6 +97,9 @@ const App = () => {
             text={card.text}
             buttonText={card.buttonText}
             onButtonClick={() => handleCardClick(card.title)}
+            onEdit={handleEdit}
+            onDelete={handleDelete}
+            showActions={true}
           />
         ))}
       </div>
