@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 /**
  * Renders a reusable Bootstrap card with title, image, text, and a button.
@@ -35,11 +36,12 @@ const Card = ({
   onDelete,
   showActions = true,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div
       className="card m-3 shadow-sm"
-      style={{ width: "18rem", transition: "transform 0.3s" }}
-      onMouseEnter={() => {
+      style={{ width: "18rem", transition: "transform 0.3s ease" }}
+      onMouseEnter={(e) => {
         e.currentTarget.style.transform = "scale(1.03)";
       }}
       onMouseLeave={(e) => {
@@ -53,6 +55,11 @@ const Card = ({
         <button className="btn btn-primary" onClick={onButtonClick}>
           {buttonText}
         </button>
+        {
+          showActions && (
+            
+          )
+        }
       </div>
     </div>
   );
