@@ -55,11 +55,16 @@ const Card = ({
         <button className="btn btn-primary" onClick={onButtonClick}>
           {buttonText}
         </button>
-        {
-          showActions && (
-            
-          )
-        }
+        {showActions && (
+          <>
+            <button className="btn btn-outline-secondary me-2" onClick={onEdit}>
+              Edit
+            </button>
+            <button className="btn btn-outline-danger" onClick={onDelete}>
+              Delete
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
