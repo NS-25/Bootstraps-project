@@ -6,6 +6,8 @@ import Badge from "./components/Badge";
 import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
 import Card from "./components/Card";
+import Modal from "./components/Modal";
+// import Modal from "./components/Modal";
 
 // const links = [
 //   {
@@ -103,17 +105,8 @@ const App = () => {
           />
         ))}
       </div>
-      <div>
-        {/* <!-- Button trigger modal --> */}
-        <button
-          type="button"
-          className="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Launch demo modal
-        </button>
-      </div>
+      
+      
     </>
   );
 };
