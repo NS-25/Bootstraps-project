@@ -19,18 +19,11 @@ const Modal = () => {
       {/* <!-- Modal --> */}
 
       {showModal && (
-        <div
-          className="modal fade d-block"
-          id="exampleModal"
-          tabindex="-1"
-          role="dialog"
-        >
+        <div className="modal show fade d-block" tabIndex="-1" role="dialog">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalLabel">
-                  Modal title
-                </h1>
+                <h1 className="modal-title fs-5">Modal title</h1>
                 <button
                   type="button"
                   className="btn-close"
