@@ -77,6 +77,9 @@ const App = () => {
 
   return (
     <>
+      <div>
+        <Navbar />
+      </div>
       {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
       <Badge variant="danger" label="used card 2" type="default" size="1" />
@@ -107,9 +110,6 @@ const App = () => {
       </div>
       <div className="mt-2">
         <Modal />
-      </div>
-      <div>
-        <Navbar />
       </div>
     </>
   );
