@@ -7,6 +7,7 @@ import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
 import Card from "./components/Card";
 import Modal from "./components/Modal";
+import Navbar from "./components/Navbar";
 
 // const links = [
 //   {
@@ -106,6 +107,9 @@ const App = () => {
       </div>
       <div className="mt-2">
         <Modal />
+      </div>
+      <div>
+        <Navbar />
       </div>
     </>
   );

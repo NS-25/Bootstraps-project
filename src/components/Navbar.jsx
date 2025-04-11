@@ -2,9 +2,17 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <h1>hello I am nav bar!</h1>
-    </div>
+    <>
+      <div>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary"></nav>
+        <a className="navbar-brand" href="#">
+          Navbar
+        </a>
+        <button className="navbar-toggler" type="button">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </>
   );
 };
 
