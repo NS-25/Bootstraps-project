@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +12,14 @@ const Navbar = () => {
     <>
       <div className="bg-success-subtle">
         <nav className="navbar navbar-expand-lg">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             Navbar
-          </a>
-          <button className="navbar-toggler" type="button">
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={toggleNavbar}
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
@@ -23,19 +28,19 @@ const Navbar = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/features">
                   Features
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

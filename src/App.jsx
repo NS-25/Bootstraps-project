@@ -7,8 +7,15 @@ import Alert from "./components/Alert";
 import Breadcrumb from "./components/Breadcrumb";
 import Card from "./components/Card";
 import Modal from "./components/Modal";
+//for navbar features..
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
+const Home = () => <h1>Welcome to my home page!🏡🏡🏡</h1>;
+const Features = () => <h1>This is my features page guys! 🚀🚀🚀 </h1>;
+const Pricing = () => <h1>This is my pricing page! 💲💲💲 </h1>;
+
+//////////////////////////////
 // const links = [
 //   {
 //     id: 1,
@@ -78,7 +85,14 @@ const App = () => {
   return (
     <>
       <div>
-        <Navbar />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/pricing" element={<Pricing />} />
+          </Routes>
+        </Router>
       </div>
       {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
