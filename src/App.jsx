@@ -96,20 +96,29 @@ const App = () => {
         </Router>
       </div>
       <div className="container mt-5">
-        <Popover label="Top Popover" placement="top" content="This is top!" />
         <Popover
+          id="top"
+          label="Top Popover"
+          placement="top"
+          content="This is top!"
+        />
+        <Popover
+          id="right"
           label="Right Popover"
           placement="right"
           content="This is right!"
           variant="primary"
         />
         <Popover
+          id="bottom"
           label="Bottom Popover"
           placement="bottom"
           content="This is bottom!"
           variant="success"
         />
         <Popover
+          id="left
+          "
           label="left Popover"
           placement="left"
           content="This is left!"
