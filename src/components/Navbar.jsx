@@ -12,9 +12,9 @@ const Navbar = () => {
     <>
       <div className="bg-success-subtle">
         <nav className="navbar navbar-expand-lg">
-          <Link className="navbar-brand" to="/">
+          <a className="navbar-brand" href="#">
             Navbar
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,7 +28,7 @@ const Navbar = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
+                <Link className="nav-link active" to="/Home">
                   Home
                 </Link>
               </li>
