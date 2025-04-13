@@ -95,8 +95,23 @@ const App = () => {
           </Routes>
         </Router>
       </div>
-      <div>
-        <Popover label="Top Popover"  placement="top" content="This is top!"/>
+      <div className="container mt-5">
+        <Popover label="Top Popover" placement="top" content="This is top!" />
+        <Popover
+          label="Right Popover"
+          placement="right"
+          content="This is right!"
+        />
+        <Popover
+          label="Bottom Popover"
+          placement="bottom"
+          content="This is bottom!"
+        />
+        <Popover
+          label="left Popover"
+          placement="left"
+          content="This is left!"
+        />
       </div>
       {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
