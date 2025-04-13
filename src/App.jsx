@@ -101,16 +101,19 @@ const App = () => {
           label="Right Popover"
           placement="right"
           content="This is right!"
+          variant="primary"
         />
         <Popover
           label="Bottom Popover"
           placement="bottom"
           content="This is bottom!"
+          variant="success"
         />
         <Popover
           label="left Popover"
           placement="left"
           content="This is left!"
+          variant="info"
         />
       </div>
       {/* <Breadcrumb items={links} /> */}
