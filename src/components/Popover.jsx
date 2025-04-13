@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-const Popover = ({ label }) => {
+const Popover = ({ label, content,placement}) => {
   return (
     <div className="">
       <button
