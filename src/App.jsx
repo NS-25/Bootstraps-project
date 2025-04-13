@@ -10,6 +10,7 @@ import Modal from "./components/Modal";
 //for navbar features..
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Popover from "./components/Popover";
 
 const Home = () => <h1>Welcome to my home page!🏡🏡🏡</h1>;
 const Features = () => <h1>This is my features page guys! 🚀🚀🚀 </h1>;
@@ -93,6 +94,9 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </Router>
+      </div>
+      <div>
+        <Popover label="Top Popover"  placement="top" content="This is top!"/>
       </div>
       {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
