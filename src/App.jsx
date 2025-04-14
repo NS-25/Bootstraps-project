@@ -10,6 +10,8 @@ import Modal from "./components/Modal";
 //for navbar features..
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import PopoverButton from "./components/PopoverButton";
+import PopoverContent from "./components/PopoverContent.jsx";
 
 const Home = () => <h1>Welcome to my home page!🏡🏡🏡</h1>;
 const Features = () => <h1>This is my features page guys! 🚀🚀🚀 </h1>;
