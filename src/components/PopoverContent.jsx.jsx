@@ -1,6 +1,5 @@
 import React from "react";
 import { usePopover } from "../hooks/PopoverContext";
-
 const PopoverContent = () => {
   const { popover } = usePopover();
 
@@ -12,14 +11,7 @@ const PopoverContent = () => {
       style={{
         top: `${popover.position.top}px`,
         left: `${popover.position.left}px`,
-        transform:
-          placement === "top"
-            ? "translate(-50%, -100%)"
-            : placement === "bottom"
-            ? "translate(-50%, 0)"
-            : placement === "left"
-            ? "translate(-100%, -50%)"
-            : "translate(0, -50%)",
+        transform: "translate(-50%, -100%)",
         zIndex: 9999,
       }}
     >
