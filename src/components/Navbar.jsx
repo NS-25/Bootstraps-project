@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-success-subtle">
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-collopse">
           <a className="navbar-brand" href="#">
             Navbar
           </a>
