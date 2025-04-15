@@ -8,6 +8,11 @@ export const CollapseProvider = ({ children }) => {
   const toggleCollapse = (id) => {
     setIsOpen((prev) => (prev === id ? null : id));
   };
-  return <CollapseContext.Provider>{children}</CollapseContext.Provider>;
+  return (
+    <CollapseContext.Provider value={{ isOpen, toggleCollapse }}>
+      {children}
+    </CollapseContext.Provider>
+  );
 };
 
+export const useCollapse = () => useContext(CollapseContext);
