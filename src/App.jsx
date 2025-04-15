@@ -12,6 +12,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PopoverButton from "./components/popover/PopoverButton.jsx";
 import PopoverContent from "./components/popover/PopoverContent.jsx.jsx";
+////////////
+///// for Collapse//
+
+import { CollapseProvider } from "./hooks/CollapseProvider.jsx";
+import CollapseToggle from "./components/collapse/CollapseToggle.jsx";
+import HorizontalCollapse from "./components/collapse/HorizontalCollapse.jsx";
+
+/////
 
 const Home = () => <h1>Welcome to my home page!🏡🏡🏡</h1>;
 const Features = () => <h1>This is my features page guys! 🚀🚀🚀 </h1>;
@@ -118,6 +126,23 @@ const App = () => {
         <PopoverContent />
       </div>
 
+      {/* //// collapse components /// */}
+      <div>
+        <CollapseProvider>
+          <div className="container mt-4">
+            <p>
+              <CollapseToggle id="collapseWidthExample">
+                Toggle width collapse
+              </CollapseToggle>
+            </p>
+            <HorizontalCollapse id="collapseWidthExample">
+              This is some placeholder content for a horizontal collapse. It's
+              hidden by default and shown when triggered.
+            </HorizontalCollapse>
+          </div>
+        </CollapseProvider>
+      </div>
+      {/* //////////////////////////////////////////////// */}
       {/* <Breadcrumb items={links} /> */}
       {/* <Badge variant="primary" label="used card 1" type="default" size="2" />
       <Badge variant="danger" label="used card 2" type="default" size="1" />
