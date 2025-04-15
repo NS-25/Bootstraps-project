@@ -1,6 +1,6 @@
 import React from "react";
 
-const Collapse = () => {
+const CollapseToggle = () => {
   return (
     <div>
       <h1>hello I am collapse</h1>
@@ -8,4 +8,4 @@ const Collapse = () => {
   );
 };
 
-export default Collapse;
+export default CollapseToggle;
