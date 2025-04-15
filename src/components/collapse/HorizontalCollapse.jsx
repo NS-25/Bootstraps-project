@@ -1,7 +1,12 @@
 import React from "react";
 import { useCollapse } from "../../hooks/CollapseProvider";
 
-const HorizontalCollapse = ({ id, buttonLabel, content }) => {
+const HorizontalCollapse = ({
+  id,
+  buttonText,
+  widthClass = "w-75",
+  children,
+}) => {
   const { visibleId, toggleCollapse } = useCollapse();
   const isOpen = visibleId === id;
 
@@ -13,18 +18,16 @@ const HorizontalCollapse = ({ id, buttonLabel, content }) => {
           type="button"
           onClick={() => toggleCollapse(id)}
         >
-          {buttonLabel}
+          {buttonText}
         </button>
         {/* ////////////// */}
         <div className="d-flex align-items-start min-vh-25">
           <div
             className={`collapse collapse-horizontal ${
               isOpen ? "show" : ""
-            } overflow-hidden`}
+            } overflow-hidden ${widthClass}`}
           >
-            <div className={`card card-body ${isOpen ? "w-75" : "w-0"}`}>
-              {content}
-            </div>
+            <div className="card card-body w-100">{children}</div>
           </div>
         </div>
       </div>
