@@ -3,13 +3,13 @@ import { createContext, useContext, useState } from "react";
 const CollapseContext = createContext();
 
 export const CollapseProvider = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(null);
+  const [visibleId, setVisibleId] = useState(null);
 
   const toggleCollapse = (id) => {
-    setIsOpen((prev) => (prev === id ? null : id));
+    setVisibleId((prev) => (prev === id ? null : id));
   };
   return (
-    <CollapseContext.Provider value={{ isOpen, toggleCollapse }}>
+    <CollapseContext.Provider value={{ visibleId, toggleCollapse }}>
       {children}
     </CollapseContext.Provider>
   );
