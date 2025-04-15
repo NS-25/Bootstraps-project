@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { usePopover } from "../hooks/PopoverContext";
+import {usePopover} from "../../hooks/PopoverContext"
 
 const PopoverButton = ({ label, content, placement = "top" }) => {
   const buttonRef = useRef();
