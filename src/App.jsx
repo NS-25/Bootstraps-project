@@ -135,7 +135,11 @@ const App = () => {
                 Toggle width collapse
               </CollapseToggle>
             </p>
-            <HorizontalCollapse id="collapseWidthExample">
+            <HorizontalCollapse
+              id="collapseWidthExample"
+              buttonText="Toggle Horizontal"
+              widthClass="w-75"
+            >
               This is some placeholder content for a horizontal collapse. It's
               hidden by default and shown when triggered.
             </HorizontalCollapse>
