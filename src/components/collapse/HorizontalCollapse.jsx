@@ -5,7 +5,7 @@ const HorizontalCollapse = ({
   id,
   buttonText,
   widthClass = "w-75",
-  children,
+  content,
 }) => {
   const { visibleId, toggleCollapse } = useCollapse();
   const isOpen = visibleId === id;
@@ -23,11 +23,11 @@ const HorizontalCollapse = ({
         {/* ////////////// */}
         <div className="d-flex align-items-start min-vh-25">
           <div
-            className={`collapse collapse-horizontal ${
+            className={`collapse collapse-horizontal overflow-hidden ${
               isOpen ? "show" : ""
-            } overflow-hidden ${widthClass}`}
+            } ${widthClass}`}
           >
-            <div className="card card-body w-100">{children}</div>
+            <div className="card card-body w-100">{content}</div>
           </div>
         </div>
       </div>

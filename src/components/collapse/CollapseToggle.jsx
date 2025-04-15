@@ -1,7 +1,7 @@
 import React from "react";
 import { useCollapse } from "../../hooks/CollapseProvider";
 
-const CollapseToggle = ({ id, buttonLabel }) => {
+const CollapseToggle = ({ id, buttonText }) => {
   const { toggleCollapse } = useCollapse();
   return (
     <button
@@ -9,7 +9,7 @@ const CollapseToggle = ({ id, buttonLabel }) => {
       type="button"
       onClick={() => toggleCollapse(id)}
     >
-      {buttonLabel}
+      {buttonText}
     </button>
   );
 };

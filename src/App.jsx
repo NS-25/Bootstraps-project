@@ -130,19 +130,15 @@ const App = () => {
       <div>
         <CollapseProvider>
           <div className="container mt-4">
-            <p>
-              <CollapseToggle id="collapseWidthExample">
-                Toggle width collapse
-              </CollapseToggle>
-            </p>
+            {/* This is just the toggle button */}
+            <CollapseToggle id="collapseWidthExample" buttonText="Toggle Me" />
+            {/* This is the horizontal collapsible content */}
             <HorizontalCollapse
               id="collapseWidthExample"
               buttonText="Toggle Horizontal"
               widthClass="w-75"
-            >
-              This is some placeholder content for a horizontal collapse. It's
-              hidden by default and shown when triggered.
-            </HorizontalCollapse>
+              content="This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered."
+            />
           </div>
         </CollapseProvider>
       </div>
